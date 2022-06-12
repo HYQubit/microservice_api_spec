@@ -68,10 +68,57 @@ curl \
 
 ### Retrieve the circuit status
 
-[TODO] 添加说明
+Retrieves the the circuit status with the given ID.
+
+#### Path parameters
+
+**id** `string`   (Required)
+
+The circuit id.
+
+#### Returns
+
+Returns a circuit status if a valid plan ID was provided. Returns an error otherwise.
+The status is one of `queued`, `running`, `finished`, or `timeout`.
+
+#### Code samples
+
+```bash
+# GET /circuit/:id/status
+curl http://<ip>:<port>/circuit/:id/status
+```
+
+#### Example Response
+
+```json
+{
+  "status": "finished"
+}
+```
 
 ### Retrieve the circuit result
 
-[TODO] 添加说明
+Retrieves the the circuit result with the given ID.
+
+#### Path parameters
+
+**id** `string`   (Required)
+
+The circuit id.
+
+#### Returns
+
+[TODO]
+
+#### Code samples
+
+```bash
+# GET /circuit/:id/result
+curl http://<ip>:<port>/circuit/:id/result
+```
+
+#### Example Response
+
+[TODO]
 
 
